@@ -1,0 +1,12 @@
+| distributed init (rank 1): env://
+| distributed init (rank 7): env://
+| distributed init (rank 5): env://
+| distributed init (rank 0): env://
+| distributed init (rank 4): env://
+| distributed init (rank 2): env://
+| distributed init (rank 6): env://
+| distributed init (rank 3): env://
+Namespace(batch_size=128, epochs=300, bce_loss=False, unscale_lr=False, model='vim_tiny_patch16_224_bimambav2_final_pool_mean_abs_pos_embed_with_midclstok_div2', input_size=384, drop=0.0, drop_path=0.0, model_ema=True, model_ema_decay=0.99996, model_ema_force_cpu=False, opt='adamw', opt_eps=1e-08, opt_betas=None, clip_grad=None, momentum=0.9, weight_decay=0.1, sched='cosine', lr=0.0005, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, warmup_lr=1e-06, min_lr=1e-05, decay_epochs=30, warmup_epochs=5, cooldown_epochs=10, patience_epochs=10, decay_rate=0.1, color_jitter=0.3, aa='rand-m9-mstd0.5-inc1', smoothing=0.1, train_interpolation='bicubic', repeated_aug=True, train_mode=True, ThreeAugment=False, src=False, reprob=0.25, remode='pixel', recount=1, resplit=False, mixup=0.8, cutmix=1.0, cutmix_minmax=None, mixup_prob=1.0, mixup_switch_prob=0.5, mixup_mode='batch', teacher_model='regnety_160', teacher_path='', distillation_type='none', distillation_alpha=0.5, distillation_tau=1.0, cosub=False, finetune='', attn_only=False, data_path='/scratch/tmp.14009825.guosun/datasets/imagenet_full_size/', data_set='IMNET', inat_category='name', output_dir='/cluster/work/cvl/guosun/shangye/output/Vim_original/vim_tiny_patch16_224_bimambav2_final_pool_mean_abs_pos_embed_with_midclstok_div2_300e_batch_size128_input_size384', device='cuda', seed=0, resume='', start_epoch=0, eval=False, eval_crop_ratio=0.875, dist_eval=False, num_workers=32, pin_mem=True, distributed=True, world_size=8, dist_url='env://', if_amp=False, if_continue_inf=False, if_nan2num=False, if_random_cls_token_position=False, if_random_token_rank=False, local_rank=0, rank=0, gpu=0, dist_backend='nccl')
+Creating model: vim_tiny_patch16_224_bimambav2_final_pool_mean_abs_pos_embed_with_midclstok_div2
+number of params: 7220968
+Start training for 300 epochs

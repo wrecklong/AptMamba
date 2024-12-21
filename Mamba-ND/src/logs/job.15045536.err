@@ -1,0 +1,77 @@
+Many modules are hidden in this stack. Use "module --show_hidden spider SOFTWARE" if you are not able to find the required software
+
+Lmod is automatically replacing "gcc/12.2.0" with
+"intel-oneapi-compilers/2023.2.0".
+
+
+Inactive Modules:
+  1) cuda/12.1.1       3) openblas/0.3.24     5) python_cuda/3.11.6
+  2) nccl/2.18.3-1     4) python/3.11.6
+
+/cluster/home/guosun/envir/shangye/MambaND/lib/python3.11/site-packages/torch/distributed/launch.py:181: FutureWarning: The module torch.distributed.launch is deprecated
+and will be removed in future. Use torchrun.
+Note that --use-env is set by default in torchrun.
+If your script expects `--local-rank` argument to be set, please
+change it to read from `os.environ['LOCAL_RANK']` instead. See 
+https://pytorch.org/docs/stable/distributed.html#launch-utility for 
+further instructions
+
+  warnings.warn(
+/cluster/home/guosun/envir/shangye/MambaND/lib/python3.11/site-packages/torch/nn/modules/conv.py:456: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  return F.conv2d(input, weight, bias, self.stride,
+Unsupported operator aten::add encountered 75 time(s)
+Unsupported operator aten::repeat encountered 2 time(s)
+Unsupported operator aten::scatter_ encountered 50 time(s)
+Unsupported operator aten::mul encountered 267 time(s)
+Unsupported operator aten::argsort encountered 55 time(s)
+Unsupported operator aten::mul_ encountered 24 time(s)
+Unsupported operator aten::rsub encountered 23 time(s)
+Unsupported operator aten::gelu encountered 18 time(s)
+Unsupported operator aten::sum encountered 14 time(s)
+Unsupported operator aten::div encountered 7 time(s)
+Unsupported operator aten::log_softmax encountered 6 time(s)
+Unsupported operator aten::sort encountered 9 time(s)
+Unsupported operator aten::im2col encountered 1 time(s)
+Unsupported operator aten::sub encountered 4 time(s)
+The following submodules of the model were never called during the trace of the graph. They may be unused, or they were accessed by direct calls to .forward() or via other python methods. In the latter case they will have zeros for statistics, though their statistics will still contribute to their parent calling module.
+decoder, decoder.decoder_blocks.0, decoder.decoder_blocks.0.attn, decoder.decoder_blocks.0.attn.attn_drop, decoder.decoder_blocks.0.attn.proj, decoder.decoder_blocks.0.attn.proj_drop, decoder.decoder_blocks.0.attn.qkv, decoder.decoder_blocks.0.mlp, decoder.decoder_blocks.0.mlp.act, decoder.decoder_blocks.0.mlp.drop, decoder.decoder_blocks.0.mlp.fc1, decoder.decoder_blocks.0.mlp.fc2, decoder.decoder_blocks.0.norm1, decoder.decoder_blocks.0.norm2, decoder.decoder_blocks.1, decoder.decoder_blocks.1.attn, decoder.decoder_blocks.1.attn.attn_drop, decoder.decoder_blocks.1.attn.proj, decoder.decoder_blocks.1.attn.proj_drop, decoder.decoder_blocks.1.attn.qkv, decoder.decoder_blocks.1.mlp, decoder.decoder_blocks.1.mlp.act, decoder.decoder_blocks.1.mlp.drop, decoder.decoder_blocks.1.mlp.fc1, decoder.decoder_blocks.1.mlp.fc2, decoder.decoder_blocks.1.norm1, decoder.decoder_blocks.1.norm2, decoder.decoder_blocks.2, decoder.decoder_blocks.2.attn, decoder.decoder_blocks.2.attn.attn_drop, decoder.decoder_blocks.2.attn.proj, decoder.decoder_blocks.2.attn.proj_drop, decoder.decoder_blocks.2.attn.qkv, decoder.decoder_blocks.2.mlp, decoder.decoder_blocks.2.mlp.act, decoder.decoder_blocks.2.mlp.drop, decoder.decoder_blocks.2.mlp.fc1, decoder.decoder_blocks.2.mlp.fc2, decoder.decoder_blocks.2.norm1, decoder.decoder_blocks.2.norm2, decoder.decoder_blocks.3, decoder.decoder_blocks.3.attn, decoder.decoder_blocks.3.attn.attn_drop, decoder.decoder_blocks.3.attn.proj, decoder.decoder_blocks.3.attn.proj_drop, decoder.decoder_blocks.3.attn.qkv, decoder.decoder_blocks.3.mlp, decoder.decoder_blocks.3.mlp.act, decoder.decoder_blocks.3.mlp.drop, decoder.decoder_blocks.3.mlp.fc1, decoder.decoder_blocks.3.mlp.fc2, decoder.decoder_blocks.3.norm1, decoder.decoder_blocks.3.norm2, decoder.decoder_blocks.4, decoder.decoder_blocks.4.attn, decoder.decoder_blocks.4.attn.attn_drop, decoder.decoder_blocks.4.attn.proj, decoder.decoder_blocks.4.attn.proj_drop, decoder.decoder_blocks.4.attn.qkv, decoder.decoder_blocks.4.mlp, decoder.decoder_blocks.4.mlp.act, decoder.decoder_blocks.4.mlp.drop, decoder.decoder_blocks.4.mlp.fc1, decoder.decoder_blocks.4.mlp.fc2, decoder.decoder_blocks.4.norm1, decoder.decoder_blocks.4.norm2, decoder.decoder_blocks.5, decoder.decoder_blocks.5.attn, decoder.decoder_blocks.5.attn.attn_drop, decoder.decoder_blocks.5.attn.proj, decoder.decoder_blocks.5.attn.proj_drop, decoder.decoder_blocks.5.attn.qkv, decoder.decoder_blocks.5.mlp, decoder.decoder_blocks.5.mlp.act, decoder.decoder_blocks.5.mlp.drop, decoder.decoder_blocks.5.mlp.fc1, decoder.decoder_blocks.5.mlp.fc2, decoder.decoder_blocks.5.norm1, decoder.decoder_blocks.5.norm2, decoder.decoder_blocks.6, decoder.decoder_blocks.6.attn, decoder.decoder_blocks.6.attn.attn_drop, decoder.decoder_blocks.6.attn.proj, decoder.decoder_blocks.6.attn.proj_drop, decoder.decoder_blocks.6.attn.qkv, decoder.decoder_blocks.6.mlp, decoder.decoder_blocks.6.mlp.act, decoder.decoder_blocks.6.mlp.drop, decoder.decoder_blocks.6.mlp.fc1, decoder.decoder_blocks.6.mlp.fc2, decoder.decoder_blocks.6.norm1, decoder.decoder_blocks.6.norm2, decoder.decoder_blocks.7, decoder.decoder_blocks.7.attn, decoder.decoder_blocks.7.attn.attn_drop, decoder.decoder_blocks.7.attn.proj, decoder.decoder_blocks.7.attn.proj_drop, decoder.decoder_blocks.7.attn.qkv, decoder.decoder_blocks.7.mlp, decoder.decoder_blocks.7.mlp.act, decoder.decoder_blocks.7.mlp.drop, decoder.decoder_blocks.7.mlp.fc1, decoder.decoder_blocks.7.mlp.fc2, decoder.decoder_blocks.7.norm1, decoder.decoder_blocks.7.norm2, decoder.decoder_embed, decoder.decoder_norm, decoder.decoder_pred, layers.0.drop_path, layers.0.dropout, layers.0.mixer.act, layers.0.mixer.conv1d, layers.0.mixer.dt_proj, layers.0.mixer.in_proj, layers.0.mixer.out_proj, layers.0.mixer.x_proj, layers.1.drop_path, layers.1.dropout, layers.1.mixer.act, layers.1.mixer.conv1d, layers.1.mixer.dt_proj, layers.1.mixer.in_proj, layers.1.mixer.out_proj, layers.1.mixer.x_proj, layers.10.drop_path, layers.10.dropout, layers.10.mixer.act, layers.10.mixer.conv1d, layers.10.mixer.dt_proj, layers.10.mixer.in_proj, layers.10.mixer.out_proj, layers.10.mixer.x_proj, layers.11.drop_path, layers.11.dropout, layers.11.mixer.act, layers.11.mixer.conv1d, layers.11.mixer.dt_proj, layers.11.mixer.in_proj, layers.11.mixer.out_proj, layers.11.mixer.x_proj, layers.12.drop_path, layers.12.dropout, layers.12.mixer.act, layers.12.mixer.conv1d, layers.12.mixer.dt_proj, layers.12.mixer.in_proj, layers.12.mixer.out_proj, layers.12.mixer.x_proj, layers.13.drop_path, layers.13.dropout, layers.13.mixer.act, layers.13.mixer.conv1d, layers.13.mixer.dt_proj, layers.13.mixer.in_proj, layers.13.mixer.out_proj, layers.13.mixer.x_proj, layers.14.drop_path, layers.14.dropout, layers.14.mixer.act, layers.14.mixer.conv1d, layers.14.mixer.dt_proj, layers.14.mixer.in_proj, layers.14.mixer.out_proj, layers.14.mixer.x_proj, layers.15.drop_path, layers.15.dropout, layers.15.mixer.act, layers.15.mixer.conv1d, layers.15.mixer.dt_proj, layers.15.mixer.in_proj, layers.15.mixer.out_proj, layers.15.mixer.x_proj, layers.16.drop_path, layers.16.dropout, layers.16.mixer.act, layers.16.mixer.conv1d, layers.16.mixer.dt_proj, layers.16.mixer.in_proj, layers.16.mixer.out_proj, layers.16.mixer.x_proj, layers.17.drop_path, layers.17.dropout, layers.17.mixer.act, layers.17.mixer.conv1d, layers.17.mixer.dt_proj, layers.17.mixer.in_proj, layers.17.mixer.out_proj, layers.17.mixer.x_proj, layers.18.drop_path, layers.18.dropout, layers.18.mixer.act, layers.18.mixer.conv1d, layers.18.mixer.dt_proj, layers.18.mixer.in_proj, layers.18.mixer.out_proj, layers.18.mixer.x_proj, layers.19.drop_path, layers.19.dropout, layers.19.mixer.act, layers.19.mixer.conv1d, layers.19.mixer.dt_proj, layers.19.mixer.in_proj, layers.19.mixer.out_proj, layers.19.mixer.x_proj, layers.2.drop_path, layers.2.dropout, layers.2.mixer.act, layers.2.mixer.conv1d, layers.2.mixer.dt_proj, layers.2.mixer.in_proj, layers.2.mixer.out_proj, layers.2.mixer.x_proj, layers.20.drop_path, layers.20.dropout, layers.20.mixer.act, layers.20.mixer.conv1d, layers.20.mixer.dt_proj, layers.20.mixer.in_proj, layers.20.mixer.out_proj, layers.20.mixer.x_proj, layers.21.drop_path, layers.21.dropout, layers.21.mixer.act, layers.21.mixer.conv1d, layers.21.mixer.dt_proj, layers.21.mixer.in_proj, layers.21.mixer.out_proj, layers.21.mixer.x_proj, layers.22.drop_path, layers.22.dropout, layers.22.mixer.act, layers.22.mixer.conv1d, layers.22.mixer.dt_proj, layers.22.mixer.in_proj, layers.22.mixer.out_proj, layers.22.mixer.x_proj, layers.23.drop_path, layers.23.dropout, layers.23.mixer.act, layers.23.mixer.conv1d, layers.23.mixer.dt_proj, layers.23.mixer.in_proj, layers.23.mixer.out_proj, layers.23.mixer.x_proj, layers.3.drop_path, layers.3.dropout, layers.3.mixer.act, layers.3.mixer.conv1d, layers.3.mixer.dt_proj, layers.3.mixer.in_proj, layers.3.mixer.out_proj, layers.3.mixer.x_proj, layers.4.drop_path, layers.4.dropout, layers.4.mixer.act, layers.4.mixer.conv1d, layers.4.mixer.dt_proj, layers.4.mixer.in_proj, layers.4.mixer.out_proj, layers.4.mixer.x_proj, layers.5.drop_path, layers.5.dropout, layers.5.mixer.act, layers.5.mixer.conv1d, layers.5.mixer.dt_proj, layers.5.mixer.in_proj, layers.5.mixer.out_proj, layers.5.mixer.x_proj, layers.6.drop_path, layers.6.dropout, layers.6.mixer.act, layers.6.mixer.conv1d, layers.6.mixer.dt_proj, layers.6.mixer.in_proj, layers.6.mixer.out_proj, layers.6.mixer.x_proj, layers.7.drop_path, layers.7.dropout, layers.7.mixer.act, layers.7.mixer.conv1d, layers.7.mixer.dt_proj, layers.7.mixer.in_proj, layers.7.mixer.out_proj, layers.7.mixer.x_proj, layers.8.drop_path, layers.8.dropout, layers.8.mixer.act, layers.8.mixer.conv1d, layers.8.mixer.dt_proj, layers.8.mixer.in_proj, layers.8.mixer.out_proj, layers.8.mixer.x_proj, layers.9.down_sample_layer.adaptive_padding, layers.9.drop_path, layers.9.dropout, layers.9.mixer.act, layers.9.mixer.conv1d, layers.9.mixer.dt_proj, layers.9.mixer.in_proj, layers.9.mixer.out_proj, layers.9.mixer.x_proj, patch_embed.adaptive_padding
+[2024-11-13 13:50:38,637] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 4170647 closing signal SIGTERM
+[2024-11-13 13:50:38,638] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 4170648 closing signal SIGTERM
+[2024-11-13 13:50:38,638] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 4170649 closing signal SIGTERM
+[2024-11-13 13:50:38,639] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 4170650 closing signal SIGTERM
+[2024-11-13 13:50:38,641] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 4170651 closing signal SIGTERM
+[2024-11-13 13:50:38,642] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 4170652 closing signal SIGTERM
+[2024-11-13 13:50:38,645] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 4170653 closing signal SIGTERM
+[2024-11-13 13:50:39,337] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 4170646) of binary: /cluster/home/guosun/envir/shangye/MambaND/bin/python
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/cluster/home/guosun/envir/shangye/MambaND/lib/python3.11/site-packages/torch/distributed/launch.py", line 196, in <module>
+    main()
+  File "/cluster/home/guosun/envir/shangye/MambaND/lib/python3.11/site-packages/torch/distributed/launch.py", line 192, in main
+    launch(args)
+  File "/cluster/home/guosun/envir/shangye/MambaND/lib/python3.11/site-packages/torch/distributed/launch.py", line 177, in launch
+    run(args)
+  File "/cluster/home/guosun/envir/shangye/MambaND/lib/python3.11/site-packages/torch/distributed/run.py", line 797, in run
+    elastic_launch(
+  File "/cluster/home/guosun/envir/shangye/MambaND/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/home/guosun/envir/shangye/MambaND/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 264, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+main.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-11-13_13:50:38
+  host      : eu-g6-056.euler.ethz.ch
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 4170646)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

@@ -1,0 +1,202 @@
+Many modules are hidden in this stack. Use "module --show_hidden spider SOFTWARE" if you are not able to find the required software
+
+Lmod is automatically replacing "gcc/12.2.0" with
+"intel-oneapi-compilers/2023.2.0".
+
+
+Inactive Modules:
+  1) cuda/12.1.1       3) openblas/0.3.24     5) python_cuda/3.11.6
+  2) nccl/2.18.3-1     4) python/3.11.6
+
+/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/distributed/launch.py:181: FutureWarning: The module torch.distributed.launch is deprecated
+and will be removed in future. Use torchrun.
+Note that --use-env is set by default in torchrun.
+If your script expects `--local-rank` argument to be set, please
+change it to read from `os.environ['LOCAL_RANK']` instead. See 
+https://pytorch.org/docs/stable/distributed.html#launch-utility for 
+further instructions
+
+  warnings.warn(
+/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/nn/modules/conv.py:456: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  return F.conv2d(input, weight, bias, self.stride,
+/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/nn/modules/conv.py:456: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  return F.conv2d(input, weight, bias, self.stride,
+/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/nn/modules/conv.py:456: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  return F.conv2d(input, weight, bias, self.stride,
+/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/nn/modules/conv.py:456: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  return F.conv2d(input, weight, bias, self.stride,
+/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/nn/modules/conv.py:456: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  return F.conv2d(input, weight, bias, self.stride,
+Traceback (most recent call last):
+  File "/scratch/tmp.14009825.guosun/main.py", line 552, in <module>
+    main(args)
+  File "/scratch/tmp.14009825.guosun/main.py", line 484, in main
+    train_stats = train_one_epoch(
+  File "/scratch/tmp.14009825.guosun/engine.py", line 87, in train_one_epoch
+    loss.backward()
+  File "/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+  File "/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/autograd/function.py", line 288, in apply
+    return user_fn(self, *args)
+  File "/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/cuda/amp/autocast_mode.py", line 140, in decorate_bwd
+    return bwd(*args, **kwargs)
+  File "/cluster/home/guosun/shangye/Vim/mamba-1p1p1/mamba_ssm/ops/selective_scan_interface.py", line 247, in backward
+    dconv1d_out, ddelta, dA, dB, dC, dD, ddelta_bias, dz, out_z = selective_scan_cuda.bwd(
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 110.00 MiB. GPU 4 has a total capacty of 23.64 GiB of which 72.81 MiB is free. Including non-PyTorch memory, this process has 23.55 GiB memory in use. Of the allocated memory 22.58 GiB is allocated by PyTorch, and 404.07 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "/scratch/tmp.14009825.guosun/main.py", line 552, in <module>
+    main(args)
+  File "/scratch/tmp.14009825.guosun/main.py", line 484, in main
+    train_stats = train_one_epoch(
+  File "/scratch/tmp.14009825.guosun/engine.py", line 87, in train_one_epoch
+    loss.backward()
+  File "/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+  File "/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/autograd/function.py", line 288, in apply
+    return user_fn(self, *args)
+  File "/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/cuda/amp/autocast_mode.py", line 140, in decorate_bwd
+    return bwd(*args, **kwargs)
+  File "/cluster/home/guosun/shangye/Vim/mamba-1p1p1/mamba_ssm/ops/selective_scan_interface.py", line 247, in backward
+    dconv1d_out, ddelta, dA, dB, dC, dD, ddelta_bias, dz, out_z = selective_scan_cuda.bwd(
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 110.00 MiB. GPU 3 has a total capacty of 23.64 GiB of which 74.81 MiB is free. Including non-PyTorch memory, this process has 23.55 GiB memory in use. Of the allocated memory 22.58 GiB is allocated by PyTorch, and 404.07 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/nn/modules/conv.py:456: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  return F.conv2d(input, weight, bias, self.stride,
+/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/nn/modules/conv.py:456: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  return F.conv2d(input, weight, bias, self.stride,
+Traceback (most recent call last):
+  File "/scratch/tmp.14009825.guosun/main.py", line 552, in <module>
+    main(args)
+  File "/scratch/tmp.14009825.guosun/main.py", line 484, in main
+    train_stats = train_one_epoch(
+  File "/scratch/tmp.14009825.guosun/engine.py", line 87, in train_one_epoch
+    loss.backward()
+  File "/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+  File "/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/autograd/function.py", line 288, in apply
+    return user_fn(self, *args)
+  File "/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/cuda/amp/autocast_mode.py", line 140, in decorate_bwd
+    return bwd(*args, **kwargs)
+  File "/cluster/home/guosun/shangye/Vim/mamba-1p1p1/mamba_ssm/ops/selective_scan_interface.py", line 247, in backward
+    dconv1d_out, ddelta, dA, dB, dC, dD, ddelta_bias, dz, out_z = selective_scan_cuda.bwd(
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 110.00 MiB. GPU 6 has a total capacty of 23.64 GiB of which 66.81 MiB is free. Including non-PyTorch memory, this process has 23.55 GiB memory in use. Of the allocated memory 22.58 GiB is allocated by PyTorch, and 404.07 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/nn/modules/conv.py:456: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  return F.conv2d(input, weight, bias, self.stride,
+Traceback (most recent call last):
+  File "/scratch/tmp.14009825.guosun/main.py", line 552, in <module>
+    main(args)
+  File "/scratch/tmp.14009825.guosun/main.py", line 484, in main
+    train_stats = train_one_epoch(
+  File "/scratch/tmp.14009825.guosun/engine.py", line 87, in train_one_epoch
+    loss.backward()
+  File "/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+  File "/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/autograd/function.py", line 288, in apply
+    return user_fn(self, *args)
+  File "/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/cuda/amp/autocast_mode.py", line 140, in decorate_bwd
+    return bwd(*args, **kwargs)
+  File "/cluster/home/guosun/shangye/Vim/mamba-1p1p1/mamba_ssm/ops/selective_scan_interface.py", line 247, in backward
+    dconv1d_out, ddelta, dA, dB, dC, dD, ddelta_bias, dz, out_z = selective_scan_cuda.bwd(
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 110.00 MiB. GPU 7 has a total capacty of 23.64 GiB of which 68.81 MiB is free. Including non-PyTorch memory, this process has 23.55 GiB memory in use. Of the allocated memory 22.58 GiB is allocated by PyTorch, and 404.07 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "/scratch/tmp.14009825.guosun/main.py", line 552, in <module>
+    main(args)
+  File "/scratch/tmp.14009825.guosun/main.py", line 484, in main
+    train_stats = train_one_epoch(
+  File "/scratch/tmp.14009825.guosun/engine.py", line 87, in train_one_epoch
+    loss.backward()
+  File "/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+  File "/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/autograd/function.py", line 288, in apply
+    return user_fn(self, *args)
+  File "/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/cuda/amp/autocast_mode.py", line 140, in decorate_bwd
+    return bwd(*args, **kwargs)
+  File "/cluster/home/guosun/shangye/Vim/mamba-1p1p1/mamba_ssm/ops/selective_scan_interface.py", line 247, in backward
+    dconv1d_out, ddelta, dA, dB, dC, dD, ddelta_bias, dz, out_z = selective_scan_cuda.bwd(
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 110.00 MiB. GPU 0 has a total capacty of 23.64 GiB of which 64.81 MiB is free. Including non-PyTorch memory, this process has 23.55 GiB memory in use. Of the allocated memory 22.58 GiB is allocated by PyTorch, and 404.07 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "/scratch/tmp.14009825.guosun/main.py", line 552, in <module>
+    main(args)
+  File "/scratch/tmp.14009825.guosun/main.py", line 484, in main
+    train_stats = train_one_epoch(
+  File "/scratch/tmp.14009825.guosun/engine.py", line 87, in train_one_epoch
+    loss.backward()
+  File "/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+  File "/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/autograd/function.py", line 288, in apply
+    return user_fn(self, *args)
+  File "/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/cuda/amp/autocast_mode.py", line 140, in decorate_bwd
+    return bwd(*args, **kwargs)
+  File "/cluster/home/guosun/shangye/Vim/mamba-1p1p1/mamba_ssm/ops/selective_scan_interface.py", line 247, in backward
+    dconv1d_out, ddelta, dA, dB, dC, dD, ddelta_bias, dz, out_z = selective_scan_cuda.bwd(
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 110.00 MiB. GPU 1 has a total capacty of 23.64 GiB of which 64.81 MiB is free. Including non-PyTorch memory, this process has 23.55 GiB memory in use. Of the allocated memory 22.58 GiB is allocated by PyTorch, and 404.07 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+[2024-11-02 13:45:29,423] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 231443 closing signal SIGTERM
+[2024-11-02 13:45:29,423] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 231444 closing signal SIGTERM
+[2024-11-02 13:45:29,424] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 231445 closing signal SIGTERM
+[2024-11-02 13:45:29,424] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 231448 closing signal SIGTERM
+[2024-11-02 13:45:32,458] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 3 (pid: 231446) of binary: /cluster/project/cvl/guosun/shangye/Vim/bin/python
+Traceback (most recent call last):
+  File "/cluster/software/stacks/2024-06/spack/opt/spack/linux-ubuntu22.04-x86_64_v3/gcc-12.2.0/python-3.10.13-f2dq73rq2g6nuqmlbmfpcrfs6fe72i6f/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/cluster/software/stacks/2024-06/spack/opt/spack/linux-ubuntu22.04-x86_64_v3/gcc-12.2.0/python-3.10.13-f2dq73rq2g6nuqmlbmfpcrfs6fe72i6f/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/distributed/launch.py", line 196, in <module>
+    main()
+  File "/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/distributed/launch.py", line 192, in main
+    launch(args)
+  File "/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/distributed/launch.py", line 177, in launch
+    run(args)
+  File "/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    elastic_launch(
+  File "/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/cluster/project/cvl/guosun/shangye/Vim/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 264, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+main.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-11-02_13:45:29
+  host      : eu-g6-034.euler.ethz.ch
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 231447)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2024-11-02_13:45:29
+  host      : eu-g6-034.euler.ethz.ch
+  rank      : 6 (local_rank: 6)
+  exitcode  : 1 (pid: 231449)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2024-11-02_13:45:29
+  host      : eu-g6-034.euler.ethz.ch
+  rank      : 7 (local_rank: 7)
+  exitcode  : 1 (pid: 231450)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-11-02_13:45:29
+  host      : eu-g6-034.euler.ethz.ch
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 231446)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+/var/spool/slurm/slurmd/state/job14009825/slurm_script: line 32: --no_amp: command not found

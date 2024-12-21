@@ -1,0 +1,15 @@
+artifact_uri: file:///scratch/tmp.14453918.guosun/MambaVision/mlruns/0/49bba4eba031446d9130822ad522eb7a/artifacts
+end_time: 1730992897351
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 49bba4eba031446d9130822ad522eb7a
+run_name: mamba_vision_T_pruning_300einit_100e_batch_size64_p0.7_lr0.000005_min_lr1e-6_decoder_pruning_loss3stage_weight0.1_mse_weight0.02_sort_keep_policy_pretrain_mae
+run_uuid: 49bba4eba031446d9130822ad522eb7a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730992869835
+status: 3
+tags: []
+user_id: guosun

@@ -1,0 +1,612 @@
+CUDA is available
+training:
+LD_LIBRARY_PATH: /cluster/home/guosun/envir/shangye/MambaND/lib/python3.11/site-packages/cv2/../../lib64:/cluster/software/commercial/intel/2023.2/x86_64/compiler/2023.2.0/linux/lib:/cluster/software/commercial/intel/2023.2/x86_64/compiler/2023.2.0/linux/lib/x64:/cluster/software/commercial/intel/2023.2/x86_64/compiler/2023.2.0/linux/lib/oclfpga/host/linux64/lib:/cluster/software/commercial/intel/2023.2/x86_64/compiler/2023.2.0/linux/compiler/lib/intel64_lin
+CUDA is availableCUDA is available
+
+CUDA is availableCUDA is availableCUDA is availableCUDA is availabletraining:
+training:CUDA is available
+
+
+
+training:
+
+LD_LIBRARY_PATH:training:training:training:LD_LIBRARY_PATH:
+training: 
+
+
+ 
+LD_LIBRARY_PATH:LD_LIBRARY_PATH:/cluster/home/guosun/envir/shangye/MambaND/lib/python3.11/site-packages/cv2/../../lib64:/cluster/software/commercial/intel/2023.2/x86_64/compiler/2023.2.0/linux/lib:/cluster/software/commercial/intel/2023.2/x86_64/compiler/2023.2.0/linux/lib/x64:/cluster/software/commercial/intel/2023.2/x86_64/compiler/2023.2.0/linux/lib/oclfpga/host/linux64/lib:/cluster/software/commercial/intel/2023.2/x86_64/compiler/2023.2.0/linux/compiler/lib/intel64_linLD_LIBRARY_PATH:LD_LIBRARY_PATH:/cluster/home/guosun/envir/shangye/MambaND/lib/python3.11/site-packages/cv2/../../lib64:/cluster/software/commercial/intel/2023.2/x86_64/compiler/2023.2.0/linux/lib:/cluster/software/commercial/intel/2023.2/x86_64/compiler/2023.2.0/linux/lib/x64:/cluster/software/commercial/intel/2023.2/x86_64/compiler/2023.2.0/linux/lib/oclfpga/host/linux64/lib:/cluster/software/commercial/intel/2023.2/x86_64/compiler/2023.2.0/linux/compiler/lib/intel64_linLD_LIBRARY_PATH:  
+  
+ /cluster/home/guosun/envir/shangye/MambaND/lib/python3.11/site-packages/cv2/../../lib64:/cluster/software/commercial/intel/2023.2/x86_64/compiler/2023.2.0/linux/lib:/cluster/software/commercial/intel/2023.2/x86_64/compiler/2023.2.0/linux/lib/x64:/cluster/software/commercial/intel/2023.2/x86_64/compiler/2023.2.0/linux/lib/oclfpga/host/linux64/lib:/cluster/software/commercial/intel/2023.2/x86_64/compiler/2023.2.0/linux/compiler/lib/intel64_lin/cluster/home/guosun/envir/shangye/MambaND/lib/python3.11/site-packages/cv2/../../lib64:/cluster/software/commercial/intel/2023.2/x86_64/compiler/2023.2.0/linux/lib:/cluster/software/commercial/intel/2023.2/x86_64/compiler/2023.2.0/linux/lib/x64:/cluster/software/commercial/intel/2023.2/x86_64/compiler/2023.2.0/linux/lib/oclfpga/host/linux64/lib:/cluster/software/commercial/intel/2023.2/x86_64/compiler/2023.2.0/linux/compiler/lib/intel64_lin/cluster/home/guosun/envir/shangye/MambaND/lib/python3.11/site-packages/cv2/../../lib64:/cluster/software/commercial/intel/2023.2/x86_64/compiler/2023.2.0/linux/lib:/cluster/software/commercial/intel/2023.2/x86_64/compiler/2023.2.0/linux/lib/x64:/cluster/software/commercial/intel/2023.2/x86_64/compiler/2023.2.0/linux/lib/oclfpga/host/linux64/lib:/cluster/software/commercial/intel/2023.2/x86_64/compiler/2023.2.0/linux/compiler/lib/intel64_lin/cluster/home/guosun/envir/shangye/MambaND/lib/python3.11/site-packages/cv2/../../lib64:/cluster/software/commercial/intel/2023.2/x86_64/compiler/2023.2.0/linux/lib:/cluster/software/commercial/intel/2023.2/x86_64/compiler/2023.2.0/linux/lib/x64:/cluster/software/commercial/intel/2023.2/x86_64/compiler/2023.2.0/linux/lib/oclfpga/host/linux64/lib:/cluster/software/commercial/intel/2023.2/x86_64/compiler/2023.2.0/linux/compiler/lib/intel64_lin/cluster/home/guosun/envir/shangye/MambaND/lib/python3.11/site-packages/cv2/../../lib64:/cluster/software/commercial/intel/2023.2/x86_64/compiler/2023.2.0/linux/lib:/cluster/software/commercial/intel/2023.2/x86_64/compiler/2023.2.0/linux/lib/x64:/cluster/software/commercial/intel/2023.2/x86_64/compiler/2023.2.0/linux/lib/oclfpga/host/linux64/lib:/cluster/software/commercial/intel/2023.2/x86_64/compiler/2023.2.0/linux/compiler/lib/intel64_lin
+
+
+
+
+| distributed init (rank 1): env://
+| distributed init (rank 7): env://
+| distributed init (rank 5): env://
+| distributed init (rank 4): env://
+| distributed init (rank 2): env://
+| distributed init (rank 6): env://
+| distributed init (rank 0): env://
+| distributed init (rank 3): env://
+Namespace(batch_size=64, epochs=100, bce_loss=False, update_freq=1, unscale_lr=False, model='MambaND_pruning_small_patch8_224', input_size=224, drop=0.1, drop_path=0.1, model_ema=True, model_ema_decay=0.99996, model_ema_force_cpu=False, opt='adamw', opt_eps=1e-08, opt_betas=None, clip_grad=None, momentum=0.9, weight_decay=0.1, sched='cosine', lr=5e-06, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, warmup_lr=1e-06, min_lr=1e-06, decay_epochs=30, warmup_epochs=5, cooldown_epochs=10, patience_epochs=10, decay_rate=0.1, color_jitter=0.3, aa='rand-m9-mstd0.5-inc1', smoothing=0.1, train_interpolation='bicubic', repeated_aug=True, train_mode=True, ThreeAugment=False, src=False, reprob=0.25, remode='pixel', recount=1, resplit=False, mixup=0.8, cutmix=1.0, cutmix_minmax=None, mixup_prob=1.0, mixup_switch_prob=0.5, mixup_mode='batch', teacher_model='regnety_160', teacher_path='/cluster/work/cvl/guosun/shangye/pretrained/mamba2d_s.pth', distillation_type='none', distillation_alpha=0.5, distillation_tau=1.0, cosub=False, finetune='', attn_only=False, data_path='/scratch/tmp.15044652.guosun/datasets/imagenet_full_size/', data_set='IMNET', inat_category='name', output_dir='/cluster/work/cvl/guosun/shangye/output/MambaND/Mamba2D_S_stride8_300einit_100e_batch_size64_p0.7_lr0.000005_min_lr1e-6_decoder_pruning_loss3stage_weight0.1_mse_weight0.02_sort_keep_policy_pretrain_mae_2_stage_pruning', log_dir=None, device='cuda', seed=0, resume='', start_epoch=0, eval=False, eval_crop_ratio=0.875, dist_eval=False, num_workers=32, pin_mem=True, distributed=True, world_size=8, dist_url='env://', if_amp=False, if_continue_inf=True, if_nan2num=False, if_random_cls_token_position=False, if_random_token_rank=False, base_rate=0.7, lr_scale=0.01, ratio_weight=2.0, pruning_weight=0.1, mse_weight=0.02, pretrained_mae_path='/cluster/work/cvl/guosun/shangye/output/pretrain_mae_vim/vim_tiny_patch16_224_bimambav2_final_pool_mean_abs_pos_embed_with_clstok_div2_mae_300e/checkpoint.pth', local_rank=0, rank=0, gpu=0, dist_backend='nccl')
+Creating model: MambaND_pruning_small_patch8_224
+keep_rate [0.7, 0.48999999999999994, 0.3429999999999999, 0.7, 0.48999999999999994, 0.3429999999999999]
++---------------------------------------------+------------+
+|                   Modules                   | Parameters |
++---------------------------------------------+------------+
+|                  pos_embed                  |   301056   |
+|        patch_embed.projection.weight        |   73728    |
+|         patch_embed.projection.bias         |    384     |
+|             layers.0.mixer.A_log            |   12288    |
+|               layers.0.mixer.D              |    768     |
+|        layers.0.mixer.in_proj.weight        |   589824   |
+|         layers.0.mixer.conv1d.weight        |    3072    |
+|          layers.0.mixer.conv1d.bias         |    768     |
+|         layers.0.mixer.x_proj.weight        |   43008    |
+|        layers.0.mixer.dt_proj.weight        |   18432    |
+|         layers.0.mixer.dt_proj.bias         |    768     |
+|        layers.0.mixer.out_proj.weight       |   294912   |
+|             layers.0.norm.weight            |    384     |
+|              layers.0.norm.bias             |    384     |
+|             layers.1.mixer.A_log            |   12288    |
+|               layers.1.mixer.D              |    768     |
+|        layers.1.mixer.in_proj.weight        |   589824   |
+|         layers.1.mixer.conv1d.weight        |    3072    |
+|          layers.1.mixer.conv1d.bias         |    768     |
+|         layers.1.mixer.x_proj.weight        |   43008    |
+|        layers.1.mixer.dt_proj.weight        |   18432    |
+|         layers.1.mixer.dt_proj.bias         |    768     |
+|        layers.1.mixer.out_proj.weight       |   294912   |
+|             layers.1.norm.weight            |    384     |
+|              layers.1.norm.bias             |    384     |
+|             layers.2.mixer.A_log            |   12288    |
+|               layers.2.mixer.D              |    768     |
+|        layers.2.mixer.in_proj.weight        |   589824   |
+|         layers.2.mixer.conv1d.weight        |    3072    |
+|          layers.2.mixer.conv1d.bias         |    768     |
+|         layers.2.mixer.x_proj.weight        |   43008    |
+|        layers.2.mixer.dt_proj.weight        |   18432    |
+|         layers.2.mixer.dt_proj.bias         |    768     |
+|        layers.2.mixer.out_proj.weight       |   294912   |
+|             layers.2.norm.weight            |    384     |
+|              layers.2.norm.bias             |    384     |
+|             layers.3.mixer.A_log            |   12288    |
+|               layers.3.mixer.D              |    768     |
+|        layers.3.mixer.in_proj.weight        |   589824   |
+|         layers.3.mixer.conv1d.weight        |    3072    |
+|          layers.3.mixer.conv1d.bias         |    768     |
+|         layers.3.mixer.x_proj.weight        |   43008    |
+|        layers.3.mixer.dt_proj.weight        |   18432    |
+|         layers.3.mixer.dt_proj.bias         |    768     |
+|        layers.3.mixer.out_proj.weight       |   294912   |
+|             layers.3.norm.weight            |    384     |
+|              layers.3.norm.bias             |    384     |
+|             layers.4.mixer.A_log            |   12288    |
+|               layers.4.mixer.D              |    768     |
+|        layers.4.mixer.in_proj.weight        |   589824   |
+|         layers.4.mixer.conv1d.weight        |    3072    |
+|          layers.4.mixer.conv1d.bias         |    768     |
+|         layers.4.mixer.x_proj.weight        |   43008    |
+|        layers.4.mixer.dt_proj.weight        |   18432    |
+|         layers.4.mixer.dt_proj.bias         |    768     |
+|        layers.4.mixer.out_proj.weight       |   294912   |
+|             layers.4.norm.weight            |    384     |
+|              layers.4.norm.bias             |    384     |
+|             layers.5.mixer.A_log            |   12288    |
+|               layers.5.mixer.D              |    768     |
+|        layers.5.mixer.in_proj.weight        |   589824   |
+|         layers.5.mixer.conv1d.weight        |    3072    |
+|          layers.5.mixer.conv1d.bias         |    768     |
+|         layers.5.mixer.x_proj.weight        |   43008    |
+|        layers.5.mixer.dt_proj.weight        |   18432    |
+|         layers.5.mixer.dt_proj.bias         |    768     |
+|        layers.5.mixer.out_proj.weight       |   294912   |
+|             layers.5.norm.weight            |    384     |
+|              layers.5.norm.bias             |    384     |
+|             layers.6.mixer.A_log            |   12288    |
+|               layers.6.mixer.D              |    768     |
+|        layers.6.mixer.in_proj.weight        |   589824   |
+|         layers.6.mixer.conv1d.weight        |    3072    |
+|          layers.6.mixer.conv1d.bias         |    768     |
+|         layers.6.mixer.x_proj.weight        |   43008    |
+|        layers.6.mixer.dt_proj.weight        |   18432    |
+|         layers.6.mixer.dt_proj.bias         |    768     |
+|        layers.6.mixer.out_proj.weight       |   294912   |
+|             layers.6.norm.weight            |    384     |
+|              layers.6.norm.bias             |    384     |
+|             layers.7.mixer.A_log            |   12288    |
+|               layers.7.mixer.D              |    768     |
+|        layers.7.mixer.in_proj.weight        |   589824   |
+|         layers.7.mixer.conv1d.weight        |    3072    |
+|          layers.7.mixer.conv1d.bias         |    768     |
+|         layers.7.mixer.x_proj.weight        |   43008    |
+|        layers.7.mixer.dt_proj.weight        |   18432    |
+|         layers.7.mixer.dt_proj.bias         |    768     |
+|        layers.7.mixer.out_proj.weight       |   294912   |
+|             layers.7.norm.weight            |    384     |
+|              layers.7.norm.bias             |    384     |
+|             layers.8.mixer.A_log            |   12288    |
+|               layers.8.mixer.D              |    768     |
+|        layers.8.mixer.in_proj.weight        |   589824   |
+|         layers.8.mixer.conv1d.weight        |    3072    |
+|          layers.8.mixer.conv1d.bias         |    768     |
+|         layers.8.mixer.x_proj.weight        |   43008    |
+|        layers.8.mixer.dt_proj.weight        |   18432    |
+|         layers.8.mixer.dt_proj.bias         |    768     |
+|        layers.8.mixer.out_proj.weight       |   294912   |
+|             layers.8.norm.weight            |    384     |
+|              layers.8.norm.bias             |    384     |
+|             layers.9.mixer.A_log            |   12288    |
+|               layers.9.mixer.D              |    768     |
+|        layers.9.mixer.in_proj.weight        |   589824   |
+|         layers.9.mixer.conv1d.weight        |    3072    |
+|          layers.9.mixer.conv1d.bias         |    768     |
+|         layers.9.mixer.x_proj.weight        |   43008    |
+|        layers.9.mixer.dt_proj.weight        |   18432    |
+|         layers.9.mixer.dt_proj.bias         |    768     |
+|        layers.9.mixer.out_proj.weight       |   294912   |
+|             layers.9.norm.weight            |    384     |
+|              layers.9.norm.bias             |    384     |
+| layers.9.down_sample_layer.reduction.weight |   589824   |
+|    layers.9.down_sample_layer.norm.weight   |    1536    |
+|     layers.9.down_sample_layer.norm.bias    |    1536    |
+|            layers.10.mixer.A_log            |   12288    |
+|              layers.10.mixer.D              |    768     |
+|        layers.10.mixer.in_proj.weight       |   589824   |
+|        layers.10.mixer.conv1d.weight        |    3072    |
+|         layers.10.mixer.conv1d.bias         |    768     |
+|        layers.10.mixer.x_proj.weight        |   43008    |
+|        layers.10.mixer.dt_proj.weight       |   18432    |
+|         layers.10.mixer.dt_proj.bias        |    768     |
+|       layers.10.mixer.out_proj.weight       |   294912   |
+|            layers.10.norm.weight            |    384     |
+|             layers.10.norm.bias             |    384     |
+|            layers.11.mixer.A_log            |   12288    |
+|              layers.11.mixer.D              |    768     |
+|        layers.11.mixer.in_proj.weight       |   589824   |
+|        layers.11.mixer.conv1d.weight        |    3072    |
+|         layers.11.mixer.conv1d.bias         |    768     |
+|        layers.11.mixer.x_proj.weight        |   43008    |
+|        layers.11.mixer.dt_proj.weight       |   18432    |
+|         layers.11.mixer.dt_proj.bias        |    768     |
+|       layers.11.mixer.out_proj.weight       |   294912   |
+|            layers.11.norm.weight            |    384     |
+|             layers.11.norm.bias             |    384     |
+|            layers.12.mixer.A_log            |   12288    |
+|              layers.12.mixer.D              |    768     |
+|        layers.12.mixer.in_proj.weight       |   589824   |
+|        layers.12.mixer.conv1d.weight        |    3072    |
+|         layers.12.mixer.conv1d.bias         |    768     |
+|        layers.12.mixer.x_proj.weight        |   43008    |
+|        layers.12.mixer.dt_proj.weight       |   18432    |
+|         layers.12.mixer.dt_proj.bias        |    768     |
+|       layers.12.mixer.out_proj.weight       |   294912   |
+|            layers.12.norm.weight            |    384     |
+|             layers.12.norm.bias             |    384     |
+|            layers.13.mixer.A_log            |   12288    |
+|              layers.13.mixer.D              |    768     |
+|        layers.13.mixer.in_proj.weight       |   589824   |
+|        layers.13.mixer.conv1d.weight        |    3072    |
+|         layers.13.mixer.conv1d.bias         |    768     |
+|        layers.13.mixer.x_proj.weight        |   43008    |
+|        layers.13.mixer.dt_proj.weight       |   18432    |
+|         layers.13.mixer.dt_proj.bias        |    768     |
+|       layers.13.mixer.out_proj.weight       |   294912   |
+|            layers.13.norm.weight            |    384     |
+|             layers.13.norm.bias             |    384     |
+|            layers.14.mixer.A_log            |   12288    |
+|              layers.14.mixer.D              |    768     |
+|        layers.14.mixer.in_proj.weight       |   589824   |
+|        layers.14.mixer.conv1d.weight        |    3072    |
+|         layers.14.mixer.conv1d.bias         |    768     |
+|        layers.14.mixer.x_proj.weight        |   43008    |
+|        layers.14.mixer.dt_proj.weight       |   18432    |
+|         layers.14.mixer.dt_proj.bias        |    768     |
+|       layers.14.mixer.out_proj.weight       |   294912   |
+|            layers.14.norm.weight            |    384     |
+|             layers.14.norm.bias             |    384     |
+|            layers.15.mixer.A_log            |   12288    |
+|              layers.15.mixer.D              |    768     |
+|        layers.15.mixer.in_proj.weight       |   589824   |
+|        layers.15.mixer.conv1d.weight        |    3072    |
+|         layers.15.mixer.conv1d.bias         |    768     |
+|        layers.15.mixer.x_proj.weight        |   43008    |
+|        layers.15.mixer.dt_proj.weight       |   18432    |
+|         layers.15.mixer.dt_proj.bias        |    768     |
+|       layers.15.mixer.out_proj.weight       |   294912   |
+|            layers.15.norm.weight            |    384     |
+|             layers.15.norm.bias             |    384     |
+|            layers.16.mixer.A_log            |   12288    |
+|              layers.16.mixer.D              |    768     |
+|        layers.16.mixer.in_proj.weight       |   589824   |
+|        layers.16.mixer.conv1d.weight        |    3072    |
+|         layers.16.mixer.conv1d.bias         |    768     |
+|        layers.16.mixer.x_proj.weight        |   43008    |
+|        layers.16.mixer.dt_proj.weight       |   18432    |
+|         layers.16.mixer.dt_proj.bias        |    768     |
+|       layers.16.mixer.out_proj.weight       |   294912   |
+|            layers.16.norm.weight            |    384     |
+|             layers.16.norm.bias             |    384     |
+|            layers.17.mixer.A_log            |   12288    |
+|              layers.17.mixer.D              |    768     |
+|        layers.17.mixer.in_proj.weight       |   589824   |
+|        layers.17.mixer.conv1d.weight        |    3072    |
+|         layers.17.mixer.conv1d.bias         |    768     |
+|        layers.17.mixer.x_proj.weight        |   43008    |
+|        layers.17.mixer.dt_proj.weight       |   18432    |
+|         layers.17.mixer.dt_proj.bias        |    768     |
+|       layers.17.mixer.out_proj.weight       |   294912   |
+|            layers.17.norm.weight            |    384     |
+|             layers.17.norm.bias             |    384     |
+|            layers.18.mixer.A_log            |   12288    |
+|              layers.18.mixer.D              |    768     |
+|        layers.18.mixer.in_proj.weight       |   589824   |
+|        layers.18.mixer.conv1d.weight        |    3072    |
+|         layers.18.mixer.conv1d.bias         |    768     |
+|        layers.18.mixer.x_proj.weight        |   43008    |
+|        layers.18.mixer.dt_proj.weight       |   18432    |
+|         layers.18.mixer.dt_proj.bias        |    768     |
+|       layers.18.mixer.out_proj.weight       |   294912   |
+|            layers.18.norm.weight            |    384     |
+|             layers.18.norm.bias             |    384     |
+|            layers.19.mixer.A_log            |   12288    |
+|              layers.19.mixer.D              |    768     |
+|        layers.19.mixer.in_proj.weight       |   589824   |
+|        layers.19.mixer.conv1d.weight        |    3072    |
+|         layers.19.mixer.conv1d.bias         |    768     |
+|        layers.19.mixer.x_proj.weight        |   43008    |
+|        layers.19.mixer.dt_proj.weight       |   18432    |
+|         layers.19.mixer.dt_proj.bias        |    768     |
+|       layers.19.mixer.out_proj.weight       |   294912   |
+|            layers.19.norm.weight            |    384     |
+|             layers.19.norm.bias             |    384     |
+|            layers.20.mixer.A_log            |   12288    |
+|              layers.20.mixer.D              |    768     |
+|        layers.20.mixer.in_proj.weight       |   589824   |
+|        layers.20.mixer.conv1d.weight        |    3072    |
+|         layers.20.mixer.conv1d.bias         |    768     |
+|        layers.20.mixer.x_proj.weight        |   43008    |
+|        layers.20.mixer.dt_proj.weight       |   18432    |
+|         layers.20.mixer.dt_proj.bias        |    768     |
+|       layers.20.mixer.out_proj.weight       |   294912   |
+|            layers.20.norm.weight            |    384     |
+|             layers.20.norm.bias             |    384     |
+|            layers.21.mixer.A_log            |   12288    |
+|              layers.21.mixer.D              |    768     |
+|        layers.21.mixer.in_proj.weight       |   589824   |
+|        layers.21.mixer.conv1d.weight        |    3072    |
+|         layers.21.mixer.conv1d.bias         |    768     |
+|        layers.21.mixer.x_proj.weight        |   43008    |
+|        layers.21.mixer.dt_proj.weight       |   18432    |
+|         layers.21.mixer.dt_proj.bias        |    768     |
+|       layers.21.mixer.out_proj.weight       |   294912   |
+|            layers.21.norm.weight            |    384     |
+|             layers.21.norm.bias             |    384     |
+|            layers.22.mixer.A_log            |   12288    |
+|              layers.22.mixer.D              |    768     |
+|        layers.22.mixer.in_proj.weight       |   589824   |
+|        layers.22.mixer.conv1d.weight        |    3072    |
+|         layers.22.mixer.conv1d.bias         |    768     |
+|        layers.22.mixer.x_proj.weight        |   43008    |
+|        layers.22.mixer.dt_proj.weight       |   18432    |
+|         layers.22.mixer.dt_proj.bias        |    768     |
+|       layers.22.mixer.out_proj.weight       |   294912   |
+|            layers.22.norm.weight            |    384     |
+|             layers.22.norm.bias             |    384     |
+|            layers.23.mixer.A_log            |   12288    |
+|              layers.23.mixer.D              |    768     |
+|        layers.23.mixer.in_proj.weight       |   589824   |
+|        layers.23.mixer.conv1d.weight        |    3072    |
+|         layers.23.mixer.conv1d.bias         |    768     |
+|        layers.23.mixer.x_proj.weight        |   43008    |
+|        layers.23.mixer.dt_proj.weight       |   18432    |
+|         layers.23.mixer.dt_proj.bias        |    768     |
+|       layers.23.mixer.out_proj.weight       |   294912   |
+|            layers.23.norm.weight            |    384     |
+|             layers.23.norm.bias             |    384     |
+|   score_predictor.0.in_conv_local.0.weight  |    384     |
+|    score_predictor.0.in_conv_local.0.bias   |    384     |
+|   score_predictor.0.in_conv_local.1.weight  |   147456   |
+|    score_predictor.0.in_conv_local.1.bias   |    384     |
+|     score_predictor.0.out_conv.0.weight     |   73728    |
+|      score_predictor.0.out_conv.0.bias      |    192     |
+|     score_predictor.0.out_conv.2.weight     |   18432    |
+|      score_predictor.0.out_conv.2.bias      |     96     |
+|     score_predictor.0.out_conv.4.weight     |    192     |
+|      score_predictor.0.out_conv.4.bias      |     2      |
+|   score_predictor.1.in_conv_local.0.weight  |    384     |
+|    score_predictor.1.in_conv_local.0.bias   |    384     |
+|   score_predictor.1.in_conv_local.1.weight  |   147456   |
+|    score_predictor.1.in_conv_local.1.bias   |    384     |
+|     score_predictor.1.out_conv.0.weight     |   73728    |
+|      score_predictor.1.out_conv.0.bias      |    192     |
+|     score_predictor.1.out_conv.2.weight     |   18432    |
+|      score_predictor.1.out_conv.2.bias      |     96     |
+|     score_predictor.1.out_conv.4.weight     |    192     |
+|      score_predictor.1.out_conv.4.bias      |     2      |
+|   score_predictor.2.in_conv_local.0.weight  |    384     |
+|    score_predictor.2.in_conv_local.0.bias   |    384     |
+|   score_predictor.2.in_conv_local.1.weight  |   147456   |
+|    score_predictor.2.in_conv_local.1.bias   |    384     |
+|     score_predictor.2.out_conv.0.weight     |   73728    |
+|      score_predictor.2.out_conv.0.bias      |    192     |
+|     score_predictor.2.out_conv.2.weight     |   18432    |
+|      score_predictor.2.out_conv.2.bias      |     96     |
+|     score_predictor.2.out_conv.4.weight     |    192     |
+|      score_predictor.2.out_conv.4.bias      |     2      |
+|   score_predictor.3.in_conv_local.0.weight  |    384     |
+|    score_predictor.3.in_conv_local.0.bias   |    384     |
+|   score_predictor.3.in_conv_local.1.weight  |   147456   |
+|    score_predictor.3.in_conv_local.1.bias   |    384     |
+|     score_predictor.3.out_conv.0.weight     |   73728    |
+|      score_predictor.3.out_conv.0.bias      |    192     |
+|     score_predictor.3.out_conv.2.weight     |   18432    |
+|      score_predictor.3.out_conv.2.bias      |     96     |
+|     score_predictor.3.out_conv.4.weight     |    192     |
+|      score_predictor.3.out_conv.4.bias      |     2      |
+|   score_predictor.4.in_conv_local.0.weight  |    384     |
+|    score_predictor.4.in_conv_local.0.bias   |    384     |
+|   score_predictor.4.in_conv_local.1.weight  |   147456   |
+|    score_predictor.4.in_conv_local.1.bias   |    384     |
+|     score_predictor.4.out_conv.0.weight     |   73728    |
+|      score_predictor.4.out_conv.0.bias      |    192     |
+|     score_predictor.4.out_conv.2.weight     |   18432    |
+|      score_predictor.4.out_conv.2.bias      |     96     |
+|     score_predictor.4.out_conv.4.weight     |    192     |
+|      score_predictor.4.out_conv.4.bias      |     2      |
+|   score_predictor.5.in_conv_local.0.weight  |    384     |
+|    score_predictor.5.in_conv_local.0.bias   |    384     |
+|   score_predictor.5.in_conv_local.1.weight  |   147456   |
+|    score_predictor.5.in_conv_local.1.bias   |    384     |
+|     score_predictor.5.out_conv.0.weight     |   73728    |
+|      score_predictor.5.out_conv.0.bias      |    192     |
+|     score_predictor.5.out_conv.2.weight     |   18432    |
+|      score_predictor.5.out_conv.2.bias      |     96     |
+|     score_predictor.5.out_conv.4.weight     |    192     |
+|      score_predictor.5.out_conv.4.bias      |     2      |
+|                 head.weight                 |   384000   |
+|                  head.bias                  |    1000    |
+|              decoder.mask_token             |    384     |
+|         decoder.decoder_embed.weight        |   196608   |
+|          decoder.decoder_embed.bias         |    512     |
+|    decoder.decoder_blocks.0.norm1.weight    |    512     |
+|     decoder.decoder_blocks.0.norm1.bias     |    512     |
+|   decoder.decoder_blocks.0.attn.qkv.weight  |   786432   |
+|    decoder.decoder_blocks.0.attn.qkv.bias   |    1536    |
+|  decoder.decoder_blocks.0.attn.proj.weight  |   262144   |
+|   decoder.decoder_blocks.0.attn.proj.bias   |    512     |
+|    decoder.decoder_blocks.0.norm2.weight    |    512     |
+|     decoder.decoder_blocks.0.norm2.bias     |    512     |
+|   decoder.decoder_blocks.0.mlp.fc1.weight   |  1048576   |
+|    decoder.decoder_blocks.0.mlp.fc1.bias    |    2048    |
+|   decoder.decoder_blocks.0.mlp.fc2.weight   |  1048576   |
+|    decoder.decoder_blocks.0.mlp.fc2.bias    |    512     |
+|    decoder.decoder_blocks.1.norm1.weight    |    512     |
+|     decoder.decoder_blocks.1.norm1.bias     |    512     |
+|   decoder.decoder_blocks.1.attn.qkv.weight  |   786432   |
+|    decoder.decoder_blocks.1.attn.qkv.bias   |    1536    |
+|  decoder.decoder_blocks.1.attn.proj.weight  |   262144   |
+|   decoder.decoder_blocks.1.attn.proj.bias   |    512     |
+|    decoder.decoder_blocks.1.norm2.weight    |    512     |
+|     decoder.decoder_blocks.1.norm2.bias     |    512     |
+|   decoder.decoder_blocks.1.mlp.fc1.weight   |  1048576   |
+|    decoder.decoder_blocks.1.mlp.fc1.bias    |    2048    |
+|   decoder.decoder_blocks.1.mlp.fc2.weight   |  1048576   |
+|    decoder.decoder_blocks.1.mlp.fc2.bias    |    512     |
+|    decoder.decoder_blocks.2.norm1.weight    |    512     |
+|     decoder.decoder_blocks.2.norm1.bias     |    512     |
+|   decoder.decoder_blocks.2.attn.qkv.weight  |   786432   |
+|    decoder.decoder_blocks.2.attn.qkv.bias   |    1536    |
+|  decoder.decoder_blocks.2.attn.proj.weight  |   262144   |
+|   decoder.decoder_blocks.2.attn.proj.bias   |    512     |
+|    decoder.decoder_blocks.2.norm2.weight    |    512     |
+|     decoder.decoder_blocks.2.norm2.bias     |    512     |
+|   decoder.decoder_blocks.2.mlp.fc1.weight   |  1048576   |
+|    decoder.decoder_blocks.2.mlp.fc1.bias    |    2048    |
+|   decoder.decoder_blocks.2.mlp.fc2.weight   |  1048576   |
+|    decoder.decoder_blocks.2.mlp.fc2.bias    |    512     |
+|    decoder.decoder_blocks.3.norm1.weight    |    512     |
+|     decoder.decoder_blocks.3.norm1.bias     |    512     |
+|   decoder.decoder_blocks.3.attn.qkv.weight  |   786432   |
+|    decoder.decoder_blocks.3.attn.qkv.bias   |    1536    |
+|  decoder.decoder_blocks.3.attn.proj.weight  |   262144   |
+|   decoder.decoder_blocks.3.attn.proj.bias   |    512     |
+|    decoder.decoder_blocks.3.norm2.weight    |    512     |
+|     decoder.decoder_blocks.3.norm2.bias     |    512     |
+|   decoder.decoder_blocks.3.mlp.fc1.weight   |  1048576   |
+|    decoder.decoder_blocks.3.mlp.fc1.bias    |    2048    |
+|   decoder.decoder_blocks.3.mlp.fc2.weight   |  1048576   |
+|    decoder.decoder_blocks.3.mlp.fc2.bias    |    512     |
+|    decoder.decoder_blocks.4.norm1.weight    |    512     |
+|     decoder.decoder_blocks.4.norm1.bias     |    512     |
+|   decoder.decoder_blocks.4.attn.qkv.weight  |   786432   |
+|    decoder.decoder_blocks.4.attn.qkv.bias   |    1536    |
+|  decoder.decoder_blocks.4.attn.proj.weight  |   262144   |
+|   decoder.decoder_blocks.4.attn.proj.bias   |    512     |
+|    decoder.decoder_blocks.4.norm2.weight    |    512     |
+|     decoder.decoder_blocks.4.norm2.bias     |    512     |
+|   decoder.decoder_blocks.4.mlp.fc1.weight   |  1048576   |
+|    decoder.decoder_blocks.4.mlp.fc1.bias    |    2048    |
+|   decoder.decoder_blocks.4.mlp.fc2.weight   |  1048576   |
+|    decoder.decoder_blocks.4.mlp.fc2.bias    |    512     |
+|    decoder.decoder_blocks.5.norm1.weight    |    512     |
+|     decoder.decoder_blocks.5.norm1.bias     |    512     |
+|   decoder.decoder_blocks.5.attn.qkv.weight  |   786432   |
+|    decoder.decoder_blocks.5.attn.qkv.bias   |    1536    |
+|  decoder.decoder_blocks.5.attn.proj.weight  |   262144   |
+|   decoder.decoder_blocks.5.attn.proj.bias   |    512     |
+|    decoder.decoder_blocks.5.norm2.weight    |    512     |
+|     decoder.decoder_blocks.5.norm2.bias     |    512     |
+|   decoder.decoder_blocks.5.mlp.fc1.weight   |  1048576   |
+|    decoder.decoder_blocks.5.mlp.fc1.bias    |    2048    |
+|   decoder.decoder_blocks.5.mlp.fc2.weight   |  1048576   |
+|    decoder.decoder_blocks.5.mlp.fc2.bias    |    512     |
+|    decoder.decoder_blocks.6.norm1.weight    |    512     |
+|     decoder.decoder_blocks.6.norm1.bias     |    512     |
+|   decoder.decoder_blocks.6.attn.qkv.weight  |   786432   |
+|    decoder.decoder_blocks.6.attn.qkv.bias   |    1536    |
+|  decoder.decoder_blocks.6.attn.proj.weight  |   262144   |
+|   decoder.decoder_blocks.6.attn.proj.bias   |    512     |
+|    decoder.decoder_blocks.6.norm2.weight    |    512     |
+|     decoder.decoder_blocks.6.norm2.bias     |    512     |
+|   decoder.decoder_blocks.6.mlp.fc1.weight   |  1048576   |
+|    decoder.decoder_blocks.6.mlp.fc1.bias    |    2048    |
+|   decoder.decoder_blocks.6.mlp.fc2.weight   |  1048576   |
+|    decoder.decoder_blocks.6.mlp.fc2.bias    |    512     |
+|    decoder.decoder_blocks.7.norm1.weight    |    512     |
+|     decoder.decoder_blocks.7.norm1.bias     |    512     |
+|   decoder.decoder_blocks.7.attn.qkv.weight  |   786432   |
+|    decoder.decoder_blocks.7.attn.qkv.bias   |    1536    |
+|  decoder.decoder_blocks.7.attn.proj.weight  |   262144   |
+|   decoder.decoder_blocks.7.attn.proj.bias   |    512     |
+|    decoder.decoder_blocks.7.norm2.weight    |    512     |
+|     decoder.decoder_blocks.7.norm2.bias     |    512     |
+|   decoder.decoder_blocks.7.mlp.fc1.weight   |  1048576   |
+|    decoder.decoder_blocks.7.mlp.fc1.bias    |    2048    |
+|   decoder.decoder_blocks.7.mlp.fc2.weight   |  1048576   |
+|    decoder.decoder_blocks.7.mlp.fc2.bias    |    512     |
+|         decoder.decoder_norm.weight         |    512     |
+|          decoder.decoder_norm.bias          |    512     |
+|         decoder.decoder_pred.weight         |   393216   |
+|          decoder.decoder_pred.bias          |    768     |
+|                  ln1.weight                 |    384     |
+|                   ln1.bias                  |    384     |
+|                  ln2.weight                 |    384     |
+|                   ln2.bias                  |    384     |
++---------------------------------------------+------------+
+Total Trainable Params: 51764276
+Mamba2DModel_Pruning(
+  (patch_embed): PatchEmbed(
+    (adaptive_padding): AdaptivePadding()
+    (projection): Conv2d(3, 384, kernel_size=(8, 8), stride=(8, 8))
+  )
+  (drop_after_pos): Dropout(p=0.1, inplace=False)
+  (layers): ModuleList(
+    (0-8): 9 x Block(
+      (mixer): Mamba(
+        (in_proj): Linear(in_features=384, out_features=1536, bias=False)
+        (conv1d): Conv1d(768, 768, kernel_size=(4,), stride=(1,), padding=(3,), groups=768)
+        (act): SiLU()
+        (x_proj): Linear(in_features=768, out_features=56, bias=False)
+        (dt_proj): Linear(in_features=24, out_features=768, bias=True)
+        (out_proj): Linear(in_features=768, out_features=384, bias=False)
+      )
+      (norm): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+      (drop_path): DropPath()
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+    (9): Block(
+      (mixer): Mamba(
+        (in_proj): Linear(in_features=384, out_features=1536, bias=False)
+        (conv1d): Conv1d(768, 768, kernel_size=(4,), stride=(1,), padding=(3,), groups=768)
+        (act): SiLU()
+        (x_proj): Linear(in_features=768, out_features=56, bias=False)
+        (dt_proj): Linear(in_features=24, out_features=768, bias=True)
+        (out_proj): Linear(in_features=768, out_features=384, bias=False)
+      )
+      (norm): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+      (drop_path): DropPath()
+      (dropout): Dropout(p=0.1, inplace=False)
+      (down_sample_layer): PatchMerging(
+        (adaptive_padding): AdaptivePadding()
+        (sampler): Unfold(kernel_size=(2, 2), dilation=(1, 1), padding=(0, 0), stride=(2, 2))
+        (reduction): Linear(in_features=1536, out_features=384, bias=False)
+        (norm): LayerNorm((1536,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (10-23): 14 x Block(
+      (mixer): Mamba(
+        (in_proj): Linear(in_features=384, out_features=1536, bias=False)
+        (conv1d): Conv1d(768, 768, kernel_size=(4,), stride=(1,), padding=(3,), groups=768)
+        (act): SiLU()
+        (x_proj): Linear(in_features=768, out_features=56, bias=False)
+        (dt_proj): Linear(in_features=24, out_features=768, bias=True)
+        (out_proj): Linear(in_features=768, out_features=384, bias=False)
+      )
+      (norm): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+      (drop_path): DropPath()
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+  )
+  (score_predictor): ModuleList(
+    (0-5): 6 x PredictorLG(
+      (in_conv_local): Sequential(
+        (0): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+        (1): Linear(in_features=384, out_features=384, bias=True)
+        (2): GELU(approximate='none')
+      )
+      (out_conv): Sequential(
+        (0): Linear(in_features=384, out_features=192, bias=True)
+        (1): GELU(approximate='none')
+        (2): Linear(in_features=192, out_features=96, bias=True)
+        (3): GELU(approximate='none')
+        (4): Linear(in_features=96, out_features=2, bias=True)
+        (5): LogSoftmax(dim=-1)
+      )
+    )
+  )
+  (head): Linear(in_features=384, out_features=1000, bias=True)
+  (decoder): MAE_Decoder(
+    (decoder_embed): Linear(in_features=384, out_features=512, bias=True)
+    (decoder_blocks): ModuleList(
+      (0-7): 8 x Block(
+        (norm1): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (attn): Attention(
+          (qkv): Linear(in_features=512, out_features=1536, bias=True)
+          (attn_drop): Dropout(p=0.0, inplace=False)
+          (proj): Linear(in_features=512, out_features=512, bias=True)
+          (proj_drop): Dropout(p=0.0, inplace=False)
+        )
+        (drop_path): Identity()
+        (norm2): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (mlp): Mlp(
+          (fc1): Linear(in_features=512, out_features=2048, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=2048, out_features=512, bias=True)
+          (drop): Dropout(p=0.0, inplace=False)
+        )
+      )
+    )
+    (decoder_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+    (decoder_pred): Linear(in_features=512, out_features=768, bias=True)
+  )
+  (pre_norm): Identity()
+  (ln1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+  (ln2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+)
+Weights of Mamba2DModel_Pruning not initialized from pretrained model: ['score_predictor.0.in_conv_local.0.weight', 'score_predictor.0.in_conv_local.0.bias', 'score_predictor.0.in_conv_local.1.weight', 'score_predictor.0.in_conv_local.1.bias', 'score_predictor.0.out_conv.0.weight', 'score_predictor.0.out_conv.0.bias', 'score_predictor.0.out_conv.2.weight', 'score_predictor.0.out_conv.2.bias', 'score_predictor.0.out_conv.4.weight', 'score_predictor.0.out_conv.4.bias', 'score_predictor.1.in_conv_local.0.weight', 'score_predictor.1.in_conv_local.0.bias', 'score_predictor.1.in_conv_local.1.weight', 'score_predictor.1.in_conv_local.1.bias', 'score_predictor.1.out_conv.0.weight', 'score_predictor.1.out_conv.0.bias', 'score_predictor.1.out_conv.2.weight', 'score_predictor.1.out_conv.2.bias', 'score_predictor.1.out_conv.4.weight', 'score_predictor.1.out_conv.4.bias', 'score_predictor.2.in_conv_local.0.weight', 'score_predictor.2.in_conv_local.0.bias', 'score_predictor.2.in_conv_local.1.weight', 'score_predictor.2.in_conv_local.1.bias', 'score_predictor.2.out_conv.0.weight', 'score_predictor.2.out_conv.0.bias', 'score_predictor.2.out_conv.2.weight', 'score_predictor.2.out_conv.2.bias', 'score_predictor.2.out_conv.4.weight', 'score_predictor.2.out_conv.4.bias', 'score_predictor.3.in_conv_local.0.weight', 'score_predictor.3.in_conv_local.0.bias', 'score_predictor.3.in_conv_local.1.weight', 'score_predictor.3.in_conv_local.1.bias', 'score_predictor.3.out_conv.0.weight', 'score_predictor.3.out_conv.0.bias', 'score_predictor.3.out_conv.2.weight', 'score_predictor.3.out_conv.2.bias', 'score_predictor.3.out_conv.4.weight', 'score_predictor.3.out_conv.4.bias', 'score_predictor.4.in_conv_local.0.weight', 'score_predictor.4.in_conv_local.0.bias', 'score_predictor.4.in_conv_local.1.weight', 'score_predictor.4.in_conv_local.1.bias', 'score_predictor.4.out_conv.0.weight', 'score_predictor.4.out_conv.0.bias', 'score_predictor.4.out_conv.2.weight', 'score_predictor.4.out_conv.2.bias', 'score_predictor.4.out_conv.4.weight', 'score_predictor.4.out_conv.4.bias', 'score_predictor.5.in_conv_local.0.weight', 'score_predictor.5.in_conv_local.0.bias', 'score_predictor.5.in_conv_local.1.weight', 'score_predictor.5.in_conv_local.1.bias', 'score_predictor.5.out_conv.0.weight', 'score_predictor.5.out_conv.0.bias', 'score_predictor.5.out_conv.2.weight', 'score_predictor.5.out_conv.2.bias', 'score_predictor.5.out_conv.4.weight', 'score_predictor.5.out_conv.4.bias', 'decoder.mask_token', 'decoder.decoder_pos_embed', 'decoder.decoder_embed.weight', 'decoder.decoder_embed.bias', 'decoder.decoder_blocks.0.norm1.weight', 'decoder.decoder_blocks.0.norm1.bias', 'decoder.decoder_blocks.0.attn.qkv.weight', 'decoder.decoder_blocks.0.attn.qkv.bias', 'decoder.decoder_blocks.0.attn.proj.weight', 'decoder.decoder_blocks.0.attn.proj.bias', 'decoder.decoder_blocks.0.norm2.weight', 'decoder.decoder_blocks.0.norm2.bias', 'decoder.decoder_blocks.0.mlp.fc1.weight', 'decoder.decoder_blocks.0.mlp.fc1.bias', 'decoder.decoder_blocks.0.mlp.fc2.weight', 'decoder.decoder_blocks.0.mlp.fc2.bias', 'decoder.decoder_blocks.1.norm1.weight', 'decoder.decoder_blocks.1.norm1.bias', 'decoder.decoder_blocks.1.attn.qkv.weight', 'decoder.decoder_blocks.1.attn.qkv.bias', 'decoder.decoder_blocks.1.attn.proj.weight', 'decoder.decoder_blocks.1.attn.proj.bias', 'decoder.decoder_blocks.1.norm2.weight', 'decoder.decoder_blocks.1.norm2.bias', 'decoder.decoder_blocks.1.mlp.fc1.weight', 'decoder.decoder_blocks.1.mlp.fc1.bias', 'decoder.decoder_blocks.1.mlp.fc2.weight', 'decoder.decoder_blocks.1.mlp.fc2.bias', 'decoder.decoder_blocks.2.norm1.weight', 'decoder.decoder_blocks.2.norm1.bias', 'decoder.decoder_blocks.2.attn.qkv.weight', 'decoder.decoder_blocks.2.attn.qkv.bias', 'decoder.decoder_blocks.2.attn.proj.weight', 'decoder.decoder_blocks.2.attn.proj.bias', 'decoder.decoder_blocks.2.norm2.weight', 'decoder.decoder_blocks.2.norm2.bias', 'decoder.decoder_blocks.2.mlp.fc1.weight', 'decoder.decoder_blocks.2.mlp.fc1.bias', 'decoder.decoder_blocks.2.mlp.fc2.weight', 'decoder.decoder_blocks.2.mlp.fc2.bias', 'decoder.decoder_blocks.3.norm1.weight', 'decoder.decoder_blocks.3.norm1.bias', 'decoder.decoder_blocks.3.attn.qkv.weight', 'decoder.decoder_blocks.3.attn.qkv.bias', 'decoder.decoder_blocks.3.attn.proj.weight', 'decoder.decoder_blocks.3.attn.proj.bias', 'decoder.decoder_blocks.3.norm2.weight', 'decoder.decoder_blocks.3.norm2.bias', 'decoder.decoder_blocks.3.mlp.fc1.weight', 'decoder.decoder_blocks.3.mlp.fc1.bias', 'decoder.decoder_blocks.3.mlp.fc2.weight', 'decoder.decoder_blocks.3.mlp.fc2.bias', 'decoder.decoder_blocks.4.norm1.weight', 'decoder.decoder_blocks.4.norm1.bias', 'decoder.decoder_blocks.4.attn.qkv.weight', 'decoder.decoder_blocks.4.attn.qkv.bias', 'decoder.decoder_blocks.4.attn.proj.weight', 'decoder.decoder_blocks.4.attn.proj.bias', 'decoder.decoder_blocks.4.norm2.weight', 'decoder.decoder_blocks.4.norm2.bias', 'decoder.decoder_blocks.4.mlp.fc1.weight', 'decoder.decoder_blocks.4.mlp.fc1.bias', 'decoder.decoder_blocks.4.mlp.fc2.weight', 'decoder.decoder_blocks.4.mlp.fc2.bias', 'decoder.decoder_blocks.5.norm1.weight', 'decoder.decoder_blocks.5.norm1.bias', 'decoder.decoder_blocks.5.attn.qkv.weight', 'decoder.decoder_blocks.5.attn.qkv.bias', 'decoder.decoder_blocks.5.attn.proj.weight', 'decoder.decoder_blocks.5.attn.proj.bias', 'decoder.decoder_blocks.5.norm2.weight', 'decoder.decoder_blocks.5.norm2.bias', 'decoder.decoder_blocks.5.mlp.fc1.weight', 'decoder.decoder_blocks.5.mlp.fc1.bias', 'decoder.decoder_blocks.5.mlp.fc2.weight', 'decoder.decoder_blocks.5.mlp.fc2.bias', 'decoder.decoder_blocks.6.norm1.weight', 'decoder.decoder_blocks.6.norm1.bias', 'decoder.decoder_blocks.6.attn.qkv.weight', 'decoder.decoder_blocks.6.attn.qkv.bias', 'decoder.decoder_blocks.6.attn.proj.weight', 'decoder.decoder_blocks.6.attn.proj.bias', 'decoder.decoder_blocks.6.norm2.weight', 'decoder.decoder_blocks.6.norm2.bias', 'decoder.decoder_blocks.6.mlp.fc1.weight', 'decoder.decoder_blocks.6.mlp.fc1.bias', 'decoder.decoder_blocks.6.mlp.fc2.weight', 'decoder.decoder_blocks.6.mlp.fc2.bias', 'decoder.decoder_blocks.7.norm1.weight', 'decoder.decoder_blocks.7.norm1.bias', 'decoder.decoder_blocks.7.attn.qkv.weight', 'decoder.decoder_blocks.7.attn.qkv.bias', 'decoder.decoder_blocks.7.attn.proj.weight', 'decoder.decoder_blocks.7.attn.proj.bias', 'decoder.decoder_blocks.7.norm2.weight', 'decoder.decoder_blocks.7.norm2.bias', 'decoder.decoder_blocks.7.mlp.fc1.weight', 'decoder.decoder_blocks.7.mlp.fc1.bias', 'decoder.decoder_blocks.7.mlp.fc2.weight', 'decoder.decoder_blocks.7.mlp.fc2.bias', 'decoder.decoder_norm.weight', 'decoder.decoder_norm.bias', 'decoder.decoder_pred.weight', 'decoder.decoder_pred.bias']
+Weights of Mamba2DModel_Pruning not initialized from pretrained model: ['pos_embed', 'patch_embed.projection.weight', 'patch_embed.projection.bias', 'layers.0.mixer.A_log', 'layers.0.mixer.D', 'layers.0.mixer.in_proj.weight', 'layers.0.mixer.conv1d.weight', 'layers.0.mixer.conv1d.bias', 'layers.0.mixer.x_proj.weight', 'layers.0.mixer.dt_proj.weight', 'layers.0.mixer.dt_proj.bias', 'layers.0.mixer.out_proj.weight', 'layers.0.norm.weight', 'layers.0.norm.bias', 'layers.1.mixer.A_log', 'layers.1.mixer.D', 'layers.1.mixer.in_proj.weight', 'layers.1.mixer.conv1d.weight', 'layers.1.mixer.conv1d.bias', 'layers.1.mixer.x_proj.weight', 'layers.1.mixer.dt_proj.weight', 'layers.1.mixer.dt_proj.bias', 'layers.1.mixer.out_proj.weight', 'layers.1.norm.weight', 'layers.1.norm.bias', 'layers.2.mixer.A_log', 'layers.2.mixer.D', 'layers.2.mixer.in_proj.weight', 'layers.2.mixer.conv1d.weight', 'layers.2.mixer.conv1d.bias', 'layers.2.mixer.x_proj.weight', 'layers.2.mixer.dt_proj.weight', 'layers.2.mixer.dt_proj.bias', 'layers.2.mixer.out_proj.weight', 'layers.2.norm.weight', 'layers.2.norm.bias', 'layers.3.mixer.A_log', 'layers.3.mixer.D', 'layers.3.mixer.in_proj.weight', 'layers.3.mixer.conv1d.weight', 'layers.3.mixer.conv1d.bias', 'layers.3.mixer.x_proj.weight', 'layers.3.mixer.dt_proj.weight', 'layers.3.mixer.dt_proj.bias', 'layers.3.mixer.out_proj.weight', 'layers.3.norm.weight', 'layers.3.norm.bias', 'layers.4.mixer.A_log', 'layers.4.mixer.D', 'layers.4.mixer.in_proj.weight', 'layers.4.mixer.conv1d.weight', 'layers.4.mixer.conv1d.bias', 'layers.4.mixer.x_proj.weight', 'layers.4.mixer.dt_proj.weight', 'layers.4.mixer.dt_proj.bias', 'layers.4.mixer.out_proj.weight', 'layers.4.norm.weight', 'layers.4.norm.bias', 'layers.5.mixer.A_log', 'layers.5.mixer.D', 'layers.5.mixer.in_proj.weight', 'layers.5.mixer.conv1d.weight', 'layers.5.mixer.conv1d.bias', 'layers.5.mixer.x_proj.weight', 'layers.5.mixer.dt_proj.weight', 'layers.5.mixer.dt_proj.bias', 'layers.5.mixer.out_proj.weight', 'layers.5.norm.weight', 'layers.5.norm.bias', 'layers.6.mixer.A_log', 'layers.6.mixer.D', 'layers.6.mixer.in_proj.weight', 'layers.6.mixer.conv1d.weight', 'layers.6.mixer.conv1d.bias', 'layers.6.mixer.x_proj.weight', 'layers.6.mixer.dt_proj.weight', 'layers.6.mixer.dt_proj.bias', 'layers.6.mixer.out_proj.weight', 'layers.6.norm.weight', 'layers.6.norm.bias', 'layers.7.mixer.A_log', 'layers.7.mixer.D', 'layers.7.mixer.in_proj.weight', 'layers.7.mixer.conv1d.weight', 'layers.7.mixer.conv1d.bias', 'layers.7.mixer.x_proj.weight', 'layers.7.mixer.dt_proj.weight', 'layers.7.mixer.dt_proj.bias', 'layers.7.mixer.out_proj.weight', 'layers.7.norm.weight', 'layers.7.norm.bias', 'layers.8.mixer.A_log', 'layers.8.mixer.D', 'layers.8.mixer.in_proj.weight', 'layers.8.mixer.conv1d.weight', 'layers.8.mixer.conv1d.bias', 'layers.8.mixer.x_proj.weight', 'layers.8.mixer.dt_proj.weight', 'layers.8.mixer.dt_proj.bias', 'layers.8.mixer.out_proj.weight', 'layers.8.norm.weight', 'layers.8.norm.bias', 'layers.9.mixer.A_log', 'layers.9.mixer.D', 'layers.9.mixer.in_proj.weight', 'layers.9.mixer.conv1d.weight', 'layers.9.mixer.conv1d.bias', 'layers.9.mixer.x_proj.weight', 'layers.9.mixer.dt_proj.weight', 'layers.9.mixer.dt_proj.bias', 'layers.9.mixer.out_proj.weight', 'layers.9.norm.weight', 'layers.9.norm.bias', 'layers.9.down_sample_layer.reduction.weight', 'layers.9.down_sample_layer.norm.weight', 'layers.9.down_sample_layer.norm.bias', 'layers.10.mixer.A_log', 'layers.10.mixer.D', 'layers.10.mixer.in_proj.weight', 'layers.10.mixer.conv1d.weight', 'layers.10.mixer.conv1d.bias', 'layers.10.mixer.x_proj.weight', 'layers.10.mixer.dt_proj.weight', 'layers.10.mixer.dt_proj.bias', 'layers.10.mixer.out_proj.weight', 'layers.10.norm.weight', 'layers.10.norm.bias', 'layers.11.mixer.A_log', 'layers.11.mixer.D', 'layers.11.mixer.in_proj.weight', 'layers.11.mixer.conv1d.weight', 'layers.11.mixer.conv1d.bias', 'layers.11.mixer.x_proj.weight', 'layers.11.mixer.dt_proj.weight', 'layers.11.mixer.dt_proj.bias', 'layers.11.mixer.out_proj.weight', 'layers.11.norm.weight', 'layers.11.norm.bias', 'layers.12.mixer.A_log', 'layers.12.mixer.D', 'layers.12.mixer.in_proj.weight', 'layers.12.mixer.conv1d.weight', 'layers.12.mixer.conv1d.bias', 'layers.12.mixer.x_proj.weight', 'layers.12.mixer.dt_proj.weight', 'layers.12.mixer.dt_proj.bias', 'layers.12.mixer.out_proj.weight', 'layers.12.norm.weight', 'layers.12.norm.bias', 'layers.13.mixer.A_log', 'layers.13.mixer.D', 'layers.13.mixer.in_proj.weight', 'layers.13.mixer.conv1d.weight', 'layers.13.mixer.conv1d.bias', 'layers.13.mixer.x_proj.weight', 'layers.13.mixer.dt_proj.weight', 'layers.13.mixer.dt_proj.bias', 'layers.13.mixer.out_proj.weight', 'layers.13.norm.weight', 'layers.13.norm.bias', 'layers.14.mixer.A_log', 'layers.14.mixer.D', 'layers.14.mixer.in_proj.weight', 'layers.14.mixer.conv1d.weight', 'layers.14.mixer.conv1d.bias', 'layers.14.mixer.x_proj.weight', 'layers.14.mixer.dt_proj.weight', 'layers.14.mixer.dt_proj.bias', 'layers.14.mixer.out_proj.weight', 'layers.14.norm.weight', 'layers.14.norm.bias', 'layers.15.mixer.A_log', 'layers.15.mixer.D', 'layers.15.mixer.in_proj.weight', 'layers.15.mixer.conv1d.weight', 'layers.15.mixer.conv1d.bias', 'layers.15.mixer.x_proj.weight', 'layers.15.mixer.dt_proj.weight', 'layers.15.mixer.dt_proj.bias', 'layers.15.mixer.out_proj.weight', 'layers.15.norm.weight', 'layers.15.norm.bias', 'layers.16.mixer.A_log', 'layers.16.mixer.D', 'layers.16.mixer.in_proj.weight', 'layers.16.mixer.conv1d.weight', 'layers.16.mixer.conv1d.bias', 'layers.16.mixer.x_proj.weight', 'layers.16.mixer.dt_proj.weight', 'layers.16.mixer.dt_proj.bias', 'layers.16.mixer.out_proj.weight', 'layers.16.norm.weight', 'layers.16.norm.bias', 'layers.17.mixer.A_log', 'layers.17.mixer.D', 'layers.17.mixer.in_proj.weight', 'layers.17.mixer.conv1d.weight', 'layers.17.mixer.conv1d.bias', 'layers.17.mixer.x_proj.weight', 'layers.17.mixer.dt_proj.weight', 'layers.17.mixer.dt_proj.bias', 'layers.17.mixer.out_proj.weight', 'layers.17.norm.weight', 'layers.17.norm.bias', 'layers.18.mixer.A_log', 'layers.18.mixer.D', 'layers.18.mixer.in_proj.weight', 'layers.18.mixer.conv1d.weight', 'layers.18.mixer.conv1d.bias', 'layers.18.mixer.x_proj.weight', 'layers.18.mixer.dt_proj.weight', 'layers.18.mixer.dt_proj.bias', 'layers.18.mixer.out_proj.weight', 'layers.18.norm.weight', 'layers.18.norm.bias', 'layers.19.mixer.A_log', 'layers.19.mixer.D', 'layers.19.mixer.in_proj.weight', 'layers.19.mixer.conv1d.weight', 'layers.19.mixer.conv1d.bias', 'layers.19.mixer.x_proj.weight', 'layers.19.mixer.dt_proj.weight', 'layers.19.mixer.dt_proj.bias', 'layers.19.mixer.out_proj.weight', 'layers.19.norm.weight', 'layers.19.norm.bias', 'layers.20.mixer.A_log', 'layers.20.mixer.D', 'layers.20.mixer.in_proj.weight', 'layers.20.mixer.conv1d.weight', 'layers.20.mixer.conv1d.bias', 'layers.20.mixer.x_proj.weight', 'layers.20.mixer.dt_proj.weight', 'layers.20.mixer.dt_proj.bias', 'layers.20.mixer.out_proj.weight', 'layers.20.norm.weight', 'layers.20.norm.bias', 'layers.21.mixer.A_log', 'layers.21.mixer.D', 'layers.21.mixer.in_proj.weight', 'layers.21.mixer.conv1d.weight', 'layers.21.mixer.conv1d.bias', 'layers.21.mixer.x_proj.weight', 'layers.21.mixer.dt_proj.weight', 'layers.21.mixer.dt_proj.bias', 'layers.21.mixer.out_proj.weight', 'layers.21.norm.weight', 'layers.21.norm.bias', 'layers.22.mixer.A_log', 'layers.22.mixer.D', 'layers.22.mixer.in_proj.weight', 'layers.22.mixer.conv1d.weight', 'layers.22.mixer.conv1d.bias', 'layers.22.mixer.x_proj.weight', 'layers.22.mixer.dt_proj.weight', 'layers.22.mixer.dt_proj.bias', 'layers.22.mixer.out_proj.weight', 'layers.22.norm.weight', 'layers.22.norm.bias', 'layers.23.mixer.A_log', 'layers.23.mixer.D', 'layers.23.mixer.in_proj.weight', 'layers.23.mixer.conv1d.weight', 'layers.23.mixer.conv1d.bias', 'layers.23.mixer.x_proj.weight', 'layers.23.mixer.dt_proj.weight', 'layers.23.mixer.dt_proj.bias', 'layers.23.mixer.out_proj.weight', 'layers.23.norm.weight', 'layers.23.norm.bias', 'score_predictor.0.in_conv_local.0.weight', 'score_predictor.0.in_conv_local.0.bias', 'score_predictor.0.in_conv_local.1.weight', 'score_predictor.0.in_conv_local.1.bias', 'score_predictor.0.out_conv.0.weight', 'score_predictor.0.out_conv.0.bias', 'score_predictor.0.out_conv.2.weight', 'score_predictor.0.out_conv.2.bias', 'score_predictor.0.out_conv.4.weight', 'score_predictor.0.out_conv.4.bias', 'score_predictor.1.in_conv_local.0.weight', 'score_predictor.1.in_conv_local.0.bias', 'score_predictor.1.in_conv_local.1.weight', 'score_predictor.1.in_conv_local.1.bias', 'score_predictor.1.out_conv.0.weight', 'score_predictor.1.out_conv.0.bias', 'score_predictor.1.out_conv.2.weight', 'score_predictor.1.out_conv.2.bias', 'score_predictor.1.out_conv.4.weight', 'score_predictor.1.out_conv.4.bias', 'score_predictor.2.in_conv_local.0.weight', 'score_predictor.2.in_conv_local.0.bias', 'score_predictor.2.in_conv_local.1.weight', 'score_predictor.2.in_conv_local.1.bias', 'score_predictor.2.out_conv.0.weight', 'score_predictor.2.out_conv.0.bias', 'score_predictor.2.out_conv.2.weight', 'score_predictor.2.out_conv.2.bias', 'score_predictor.2.out_conv.4.weight', 'score_predictor.2.out_conv.4.bias', 'score_predictor.3.in_conv_local.0.weight', 'score_predictor.3.in_conv_local.0.bias', 'score_predictor.3.in_conv_local.1.weight', 'score_predictor.3.in_conv_local.1.bias', 'score_predictor.3.out_conv.0.weight', 'score_predictor.3.out_conv.0.bias', 'score_predictor.3.out_conv.2.weight', 'score_predictor.3.out_conv.2.bias', 'score_predictor.3.out_conv.4.weight', 'score_predictor.3.out_conv.4.bias', 'score_predictor.4.in_conv_local.0.weight', 'score_predictor.4.in_conv_local.0.bias', 'score_predictor.4.in_conv_local.1.weight', 'score_predictor.4.in_conv_local.1.bias', 'score_predictor.4.out_conv.0.weight', 'score_predictor.4.out_conv.0.bias', 'score_predictor.4.out_conv.2.weight', 'score_predictor.4.out_conv.2.bias', 'score_predictor.4.out_conv.4.weight', 'score_predictor.4.out_conv.4.bias', 'score_predictor.5.in_conv_local.0.weight', 'score_predictor.5.in_conv_local.0.bias', 'score_predictor.5.in_conv_local.1.weight', 'score_predictor.5.in_conv_local.1.bias', 'score_predictor.5.out_conv.0.weight', 'score_predictor.5.out_conv.0.bias', 'score_predictor.5.out_conv.2.weight', 'score_predictor.5.out_conv.2.bias', 'score_predictor.5.out_conv.4.weight', 'score_predictor.5.out_conv.4.bias', 'head.weight', 'head.bias', 'ln1.weight', 'ln1.bias', 'ln2.weight', 'ln2.bias']
+size mismatch for decoder.mask_token: copying a param with shape torch.Size([1, 1, 512]) from checkpoint, the shape in current model is torch.Size([1, 1, 384]).
+size mismatch for decoder.decoder_pos_embed: copying a param with shape torch.Size([1, 197, 512]) from checkpoint, the shape in current model is torch.Size([1, 196, 512]).
+size mismatch for decoder.decoder_embed.weight: copying a param with shape torch.Size([512, 192]) from checkpoint, the shape in current model is torch.Size([512, 384]).
+input params:  xz.1 conv1d_weight.1 conv1d_bias.1 x_proj_weight.1 delta_proj_weight.1 out_proj_weight.1 A.1 D.1 delta_bias.1 
+input params:  xz.3 conv1d_weight.3 conv1d_bias.3 x_proj_weight.3 delta_proj_weight.3 out_proj_weight.3 A.3 D.3 delta_bias.3 
+input params:  xz.5 conv1d_weight.5 conv1d_bias.5 x_proj_weight.5 delta_proj_weight.5 out_proj_weight.5 A.5 D.5 delta_bias.5 
+input params:  xz.7 conv1d_weight.7 conv1d_bias.7 x_proj_weight.7 delta_proj_weight.7 out_proj_weight.7 A.7 D.7 delta_bias.7 
+input params:  xz.9 conv1d_weight.9 conv1d_bias.9 x_proj_weight.9 delta_proj_weight.9 out_proj_weight.9 A.9 D.9 delta_bias.9 
+input params:  xz.11 conv1d_weight.11 conv1d_bias.11 x_proj_weight.11 delta_proj_weight.11 out_proj_weight.11 A.11 D.11 delta_bias.11 
+input params:  xz.13 conv1d_weight.13 conv1d_bias.13 x_proj_weight.13 delta_proj_weight.13 out_proj_weight.13 A.13 D.13 delta_bias.13 
+input params:  xz.15 conv1d_weight.15 conv1d_bias.15 x_proj_weight.15 delta_proj_weight.15 out_proj_weight.15 A.15 D.15 delta_bias.15 
+input params:  xz.17 conv1d_weight.17 conv1d_bias.17 x_proj_weight.17 delta_proj_weight.17 out_proj_weight.17 A.17 D.17 delta_bias.17 
+input params:  xz.19 conv1d_weight.19 conv1d_bias.19 x_proj_weight.19 delta_proj_weight.19 out_proj_weight.19 A.19 D.19 delta_bias.19 
+input params:  xz.21 conv1d_weight.21 conv1d_bias.21 x_proj_weight.21 delta_proj_weight.21 out_proj_weight.21 A.21 D.21 delta_bias.21 
+input params:  xz.23 conv1d_weight.23 conv1d_bias.23 x_proj_weight.23 delta_proj_weight.23 out_proj_weight.23 A.23 D.23 delta_bias.23 
+input params:  xz.25 conv1d_weight.25 conv1d_bias.25 x_proj_weight.25 delta_proj_weight.25 out_proj_weight.25 A.25 D.25 delta_bias.25 
+input params:  xz.27 conv1d_weight.27 conv1d_bias.27 x_proj_weight.27 delta_proj_weight.27 out_proj_weight.27 A.27 D.27 delta_bias.27 
+input params:  xz.29 conv1d_weight.29 conv1d_bias.29 x_proj_weight.29 delta_proj_weight.29 out_proj_weight.29 A.29 D.29 delta_bias.29 
+input params:  xz.31 conv1d_weight.31 conv1d_bias.31 x_proj_weight.31 delta_proj_weight.31 out_proj_weight.31 A.31 D.31 delta_bias.31 
+input params:  xz.33 conv1d_weight.33 conv1d_bias.33 x_proj_weight.33 delta_proj_weight.33 out_proj_weight.33 A.33 D.33 delta_bias.33 
+input params:  xz.35 conv1d_weight.35 conv1d_bias.35 x_proj_weight.35 delta_proj_weight.35 out_proj_weight.35 A.35 D.35 delta_bias.35 
+input params:  xz.37 conv1d_weight.37 conv1d_bias.37 x_proj_weight.37 delta_proj_weight.37 out_proj_weight.37 A.37 D.37 delta_bias.37 
+input params:  xz.39 conv1d_weight.39 conv1d_bias.39 x_proj_weight.39 delta_proj_weight.39 out_proj_weight.39 A.39 D.39 delta_bias.39 
+input params:  xz.41 conv1d_weight.41 conv1d_bias.41 x_proj_weight.41 delta_proj_weight.41 out_proj_weight.41 A.41 D.41 delta_bias.41 
+input params:  xz.43 conv1d_weight.43 conv1d_bias.43 x_proj_weight.43 delta_proj_weight.43 out_proj_weight.43 A.43 D.43 delta_bias.43 
+input params:  xz.45 conv1d_weight.45 conv1d_bias.45 x_proj_weight.45 delta_proj_weight.45 out_proj_weight.45 A.45 D.45 delta_bias.45 
+input params:  xz conv1d_weight conv1d_bias x_proj_weight delta_proj_weight out_proj_weight A D delta_bias 
+number of GFLOPs: 5.530587072
+# throughput test
+throughput averaged with 30 times
+batch_size 32 throughput 870.1330181156524
+memory: 908.59716796875

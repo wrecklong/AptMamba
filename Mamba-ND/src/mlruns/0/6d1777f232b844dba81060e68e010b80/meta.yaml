@@ -1,0 +1,15 @@
+artifact_uri: file:///scratch/tmp.14350875.guosun/mlruns/0/6d1777f232b844dba81060e68e010b80/artifacts
+end_time: 1730897748538
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6d1777f232b844dba81060e68e010b80
+run_name: 8_300einit_100e_batch_size64_p0.7_lr0.00001_min_lr1e-6_decoder_pruning_loss3stage_weight0.1_mse_weight0.02_sort_keep_policy_pretrain_mae
+run_uuid: 6d1777f232b844dba81060e68e010b80
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730897726691
+status: 3
+tags: []
+user_id: guosun

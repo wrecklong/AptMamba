@@ -1,0 +1,15 @@
+artifact_uri: file:///scratch/tmp.14453918.guosun/vim_random/mlruns/0/f9dd0cce90744ad0a3735cb12055ee17/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f9dd0cce90744ad0a3735cb12055ee17
+run_name: vimpruning_tiny_patch16_224_bimambav2_final_pool_mean_abs_pos_embed_with_clstok_div2_300einit_100e_random_select
+run_uuid: f9dd0cce90744ad0a3735cb12055ee17
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731090632544
+status: 1
+tags: []
+user_id: guosun
